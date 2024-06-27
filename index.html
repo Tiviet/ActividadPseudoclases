@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio pseudoclases</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Prueba Checked -->
+
+    <h1>:checked</h1>
+    <div>
+        <input type="radio" name="respuesta" id="si">
+        <label for="si">Si</label>
+
+        <input type="radio" name="respuesta" id="no">
+        <label for="no">No</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="chulo">
+        <label for="chulo">Checkeame</label>
+      </div>
+
+    <!-- Prueba Focus -->
+    <h1>:focus</h1>
+    <div>
+        <input class="enfoque" value="Cambio de color si me clickeas"></input>
+    </div>
+    <br>
+
+    <!-- Prueba Disabled -->
+    <h1>:enabled y :disabled</h1>
+    <div class="prueba-doble">
+        <input type="text" placeholder="Escribe">
+        <input type="text" placeholder="No puedes escribir" disabled>
+    </div>
+
+    <!-- Prueba Default -->
+    <h1>:default</h1>
+    <div class="clima">
+        <input type="radio" name="clima" id="calor">
+        <label for="calor">Calor</label>
+
+        <input type="radio" name="clima" id="frio" checked>
+        <label for="frio">Frio</label>
+    </div>   
+
+    <!-- Prueba valid e invalid -->
+    <h1>:valid e :invalid</h1>
+    <div class="correo">
+        <input type="email" name="email" placeholder="Correo valido">
+        <input type="email" name="email" placeholder="Correo invalido" required>
+    </div> 
+
+    <!-- Prueba read-write -->
+    <h1>:read-write</h1>
+    <div class="readorwrite">
+        <input type="text" value="Escribe aqui tus pensamientos">
+        <input type="text" value="Aqui solo puedes leer mis pensamientos" readonly>
+    </div> 
+
+    <!-- Prueba in-range -->
+    <h1>:in-range</h1>
+    <div class="rango">
+        <ul>
+        Solo se permiten valores entre 4 y 9
+        <li>
+          <input
+            id="valor1"
+            name="valor1"
+            type="number"
+            placeholder="4 a 9"
+            min="4"
+            max="9"
+            value="20"
+            required />
+          <label for="valor1">Tu valor es </label>
+        </li>
+      </ul></div>
+</body>
+</html>
